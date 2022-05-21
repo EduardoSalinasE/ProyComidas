@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_plomon"
+    tools:context=".ArequipaPlato1Activity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/color_plomon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_plomon"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="center"
+                app:srcCompat="@drawable/chiri_uchu" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/texto_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chiri Uchu" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="INGREDIENTES: 2 cuyes pelados 1 gallina pelada ½ kilo de cecina o charqui 4 chorizos hervidos 1 cebolla ½ taza de huacatay Sal y pimienta al gusto Tortillas o torrejas de maíz  3 huevos batidos 100 gramos de harina preparada 100 gramos de harina de maíz 300 gramos de puré de zapallo macre 1 taza de caldo de gallina (el líquido) 2 tallos de cebolla china cortada 1 cucharadita de polvo de hornear Pizca de orégano Sal, pimienta y comino al gusto Aceite c/n"
+                        android:textColor="@color/color_plomo"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/boton_platos3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

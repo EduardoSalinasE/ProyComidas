@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proy_comidas_ep1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Proy_Comidas_ep1">
+        <activity
+            android:name=".UcayaliPlato3Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Ucayali"
+            android:exported="false" />
+        <activity
+            android:name=".UcayaliPlato2Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Ucayali"
+            android:exported="false" />
+        <activity
+            android:name=".UcayaliPlato1Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Ucayali"
+            android:exported="false" />
+        <activity
+            android:name=".TumbesPlato3Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Tumbes"
+            android:exported="false" />
+        <activity
+            android:name=".TumbesPlato2Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Tumbes"
+            android:exported="false" />
+        <activity
+            android:name=".TumbesPlato1Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Tumbes"
+            android:exported="false" />
+        <activity
+            android:name=".PunoPlato3Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Puno"
+            android:exported="false" />
+        <activity
+            android:name=".PunoPlato2Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Puno"
+            android:exported="false" />
+        <activity
+            android:name=".PunoPlato1Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Puno"
+            android:exported="false" />
+        <activity
+            android:name=".PiuraPlato3Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Piura"
+            android:exported="false" />
+        <activity
+            android:name=".PiuraPlato2Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Piura"
+            android:exported="false" />
+        <activity
+            android:name=".PiuraPlato1Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Piura"
+            android:exported="false" />
+        <activity
+            android:name=".LoretoPlato3Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Loreto"
+            android:exported="false" />
+        <activity
+            android:name=".LoretoPlato2Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Loreto"
+            android:exported="false" />
+        <activity
+            android:name=".LoretoPlato1Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Loreto"
+            android:exported="false" />
+        <activity
+            android:name=".CuscoPlato3Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Cusco"
+            android:exported="false" />
+        <activity
+            android:name=".CuscoPlato2Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Cusco"
+            android:exported="false" />
+        <activity
+            android:name=".CuscoPlato1Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Cusco"
+            android:exported="false" />
+        <activity
+            android:name=".ArequipaPlato3Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Arequipa"
+            android:exported="false" />
+        <activity
+            android:name=".ArequipaPlato2Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Arequipa"
+            android:exported="false" />
+        <activity
+            android:name=".ArequipaPlato1Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Arequipa"
+            android:exported="false"
+            />
+        <activity
+            android:name=".LimaPlato3Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Lima"
+            android:exported="false" />
+        <activity
+            android:name=".LimaPlato2Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Lima"
+            android:exported="false" />
+        <activity
+            android:name=".LimaPlato1Activity"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:label="Lima"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlatosUcayaliActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlatosLoretoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlatosPunoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlatosCuscoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlatosArequipaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlatosPiuraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlatosTumbesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlatosLimaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DepartamentosSelvaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DepartamentosSierraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DepartamentosCostaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

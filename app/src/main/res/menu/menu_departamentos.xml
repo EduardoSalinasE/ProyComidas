@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/departamentos_costa"
+        android:title="Platos de la Costa" />
+    <item
+        android:id="@+id/departamentos_sierra"
+        android:title="Platos de la Sierra" />
+    <item
+        android:id="@+id/departamentos_selva"
+        android:title="Platos de la Selva" />
+</menu>
