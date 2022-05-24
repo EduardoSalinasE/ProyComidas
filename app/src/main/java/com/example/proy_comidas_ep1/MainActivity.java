@@ -1,7 +1,10 @@
 package com.example.proy_comidas_ep1;
 
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 
 import android.content.Intent;
@@ -9,10 +12,18 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.google.android.material.bottomnavigation.BottomNavigationItemView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class MainActivity extends AppCompatActivity {
+
+    PrimerFragmento primerFragmento = new PrimerFragmento();
+    SegundoFragmento segundoFragmento = new SegundoFragmento();
+    TercerFragmento tercerFragmento = new TercerFragmento();
+    CuartoFragmento cuartoFragmento = new CuartoFragmento();
 
 
     @Override
@@ -20,8 +31,32 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        BottomNavigationView navigation = findViewById(R.id.bottom_navigation);
+        navigation.setOnItemSelectedListener(mOnNavigationItemSelectedListener);
 
+        loadFragment(primerFragmento);
     }
+
+    private final BottomNavigationView.OnItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.firstFragment:
+                    loadFragment(primerFragmento);
+                    return true;
+                case R.id.secondFragment:
+                    loadFragment(segundoFragmento);
+                    return true;
+                case R.id.thirdFragment:
+                    loadFragment(tercerFragmento);
+                    return true;
+                case R.id.fourthFragment:
+                    loadFragment(cuartoFragmento);
+                    return true;
+            }
+            return false;
+        }
+    };
 
 
 
@@ -60,5 +95,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void mostrarDepartamentosSelva() {
         startActivity(new Intent(this, DepartamentosSelvaActivity.class));
+    }
+
+    public void loadFragment(Fragment fragment){
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_container, fragment);
+        transaction.commit();
     }
 }

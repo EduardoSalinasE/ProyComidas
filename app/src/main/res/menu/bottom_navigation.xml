@@ -16,4 +16,10 @@
         android:icon="@android:drawable/ic_dialog_alert"
         android:title="Acerca de"
         />
+
+    <item
+        android:id="@+id/fourthFragment"
+        android:icon="@android:drawable/ic_dialog_alert"
+        android:title="Lista"
+        />
 </menu>
