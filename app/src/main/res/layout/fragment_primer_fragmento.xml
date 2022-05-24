@@ -10,12 +10,15 @@
     <!-- TODO: Update blank fragment layout -->
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="288dp"
-        android:scaleType="fitStart"
-        android:src="@drawable/comida_peruana"
-        tools:ignore="MissingConstraints" />
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:scaleType="center"
+        android:src="@drawable/comida_peruana2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
@@ -25,20 +28,21 @@
         android:text="Historia de la Comida Peruana"
         android:textColor="@color/color_verdec"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="11dp" />
+        tools:layout_editor_absoluteX="12dp" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/imageView5">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,20 +52,10 @@
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:textColor="@color/color_plomoc"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_light"
-                android:text="La gastronomía peruana es el conjunto de platillos y técnicas culinarias del Perú que forman parte de las tradiciones y vida común de sus habitantes, resultado de la fusión de la tradición culinaria del antiguo Perú con la gastronomía europea y otras. En 2011, la gastronomía peruana fue reconocida como «Patrimonio Cultural de las Américas para el Mundo» por parte de la Organización de los Estados Americanos.
-
-                La cocina peruana es una de las cocinas más importantes en el mundo y un ejemplo de cocina fusión, debido a su larga historia multicultural, la cual se basa en la mezcla de los conocimientos culinarios del antiguo Perú —con sus propias técnicas y potajes— con la cocina hispana en su variante muy fuertemente influenciada por 762 años de presencia árabe en la península ibérica, y con importante aporte de las costumbres culinarias llevadas de la costa atlántica del África subsahariana por los esclavos.
-
-                Posteriormente, este mestizaje se vio influenciado por los usos y costumbres culinarios de los chefs franceses que huyeron de la revolución en su país para radicarse, en buen número, en la capital del Virreinato del Perú. Igualmente trascendental fue la influencia de las migraciones del siglo XIX, que incluyó chinos-cantoneses, japoneses e italianos, entre otras poblaciones principalmente europeas.
-
-                La cocina peruana es una de las más variadas del mundo; el libro 357 listas para entender cómo somos los peruanos llega a contar hasta 491 platos típicos, siendo la gastronomía con más platos típicos del mundo. A lo largo de la costa peruana existen registrados más de dos mil quinientos diferentes tipos de sopas, así mismo existen más de 250 postres tradicionales. La gran variedad de la gastronomía peruana se sustenta en tres fuentes: la particularidad de la geografía del Perú, la mezcla de culturas y la adaptación de culturas milenarias a la cocina moderna.
-
-                El Perú es el país con mayor variedad de papas a nivel mundial, con más de tres mil tipos de papas, la cual, de hecho, tiene sus orígenes en el altiplano sur del Perú, tubérculo que cumple un rol muy importante en la gastronomía global, y en la cocina mundial. Algunos platos importantes del Perú que llevan papa son: la papa a la huancaína, papa rellena, causa a la limeña, etc.
-
-                Lima, la capital del Perú, es reconocida como la capital gastronómica de América. Una de las razones por las que se le denomina así, es porque posee el festival de comida más importante de América Latina, la Feria Gastronómica Internacional de Lima, conocida como Mistura. Asimismo, en la lista The World's 50 Best Restaurants, los restaurantes peruanos dominan el ranking de los mejores de Latinoamérica, habiendo obtenido el primer lugar en los años 2013-2019 y 2021, destacando el restaurante Central, que ha obtenido el máximo galardón en cuatro oportunidades, además de posicionarse en el cuarto lugar en el ranking mundial del año 2021.22​ Adicionalmente, posee chefs altamente reconocidos a nivel mundial, entre los que destacan Virgilio Martínez y Pía León quienes han sido galardonados como los mejores del mundo en 2017y 2021, respectivamente, así como Gastón Acurio, quien ha sido uno de los que más ha contribuido a la revalorización e internacionalización de la culinaria peruana." />
+                android:text="@string/comida_peruana_texto"
+                android:textColor="@color/color_plomoc" />
         </LinearLayout>
     </ScrollView>
 

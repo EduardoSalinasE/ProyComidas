@@ -2,5 +2,100 @@
     <string name="app_name">Proy_Comidas_ep1</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="comida_peruana_texto">
+            El Perú es un país con una tradición
+milenaria y un gran futuro, sin dejar
+de lado sus raíces y el arte del buen
+comer es uno de los signos
+representativos de su identidad. El
+respeto de su tradición y sus raíces,
+unido al aporte de nuevas técnicas
+culinarias de otras culturas, ha
+hecho que la cocina peruana sea
+considerada entre las diez mejores
+cocinas del mundo
+                 \n\n
+        La comida peruana es maravillosa, la abundancia de ingredientes de excelente calidad,
+la pasión y el buen gusto que le pone cada peruano, ha hecho que la cocina peruana sea
+reconocida a nivel mundial.
+        \n\n
+        La evolución de la cocina peruana es sorprendente, muchos insumos de las diferentes
+regiones se vienen incorporando a la cocina, como algunos frutos de la amazonía
+utilizados en la elaboración de variadas recetas. Desde épocas inmemoriales el peruano
+ha sido exigente y refinado en la comida, utilizaba técnicas, como el salar la carne,
+deshidratar y cocinar en hornos de tierra, para el procesamiento de la comida, muchas
+de esas técnicas precolombinas se utilizan aún en la actualidad.
+        \n\n
+        Como producto de la colonización española, la inmigración africana, china, italiana y
+japonesa, la cocina peruana se vio enriquecida con nuevas técnicas de preparación e
+insumos de otras partes del mundo, pero sobre todo destaca la influencia de la cocina
+española y china tanto es así que tiene denominación propia, cocina criolla y chifa, la
+cocina criolla peruana debe una gran parte de su éxito a esta fusión.
+        \n\n
+        Siendo la región andina el centro de domesticación de muchas especies nativas entre
+ellos la papa, legado del Perú al mundo, que fueron enriqueciendo constantemente la
+gastronomía peruana.
+    </string>
+
+    <string name="galardonada_texto">
+        El Perú fue distinguido como el mejor destino culinario en el mundo 2021 al ganar el premio que otorga el World Travel Awards (Premio Mundial de Viajes en castellano), informó el Ministerio de Comercio Exterior y Turismo (Mincetur) y la Comisión de Promoción del Perú para la Exportación y el Turismo (Promperú).
+        \n\n
+        "La gastronomía peruana es para los europeos 'la comida de los dioses".
+        \n\n
+        Este premio forma parte de las tres distinciones que, en total, recibió el Perú por ser el mejor destino culinario, cultural y de atracción turística, con Machu Picchu, Líder en el mundo 2021.
+        \n\n
+        Estos galardones cierran con broche de oro, un año con importantes reconocimientos hacia el Perú que realzan la calidad turística de nuestro país y que nos posicionan como el destino soñado a visitar.
+        \n\n
+        Los premios WTA sirven para distinguir y celebrar la excelencia en todos los sectores de la industria mundial de viajes y turismo.
+        \n\n
+        El pasado 23 de noviembre, el restaurante Central, de los chefs Virgilio Martínez y Pía León, y reconocido por su exploración gastronómica de la biodiversidad del Perú, se llevó el primer puesto como The Greatest Restaurant in Latin America 2013-2021 (El mejor restaurante de América Latina 2013-2021).
+        \n\n
+        Junto al Central se ubica en el top 3 el también restaurante peruano Maido. El sabor peruano se apoderó, en total, de 16 lugares destacados: Astrid y Gastón (4), La Mar (13), Osso (17), Rafael (20), Isolina (24), Fiesta (39), La Picantería (46), Kjolle (52), Mayta (56), Mil (61), Cosme (69), El Mercado (71), Mérito (78), Costanera 700 (96).
+        \n\n
+        El Mincetur señaló que es importante reconocer y valorar a los grandes protagonistas de estos grandes triunfos en los sectores turismo y gastronomía, todos aquellos que trabajan para promover la cultura, la belleza de los destinos del Perú, la alta calidad de los servicios turísticos en varias regiones y su cada vez más afamada gastronomía.
+        \n\n
+        Amora Carbajal, presidente ejecutiva de Promperú, dijo sentirse orgullosa por los importantes premios que está recibiendo el Perú, que lo sitúa como uno de los destinos turísticos más importantes del mundo.
+        \n\n
+        “Seguiremos trabajando para lograr que el Perú continúe con un proceso firme de seguridad y sostenibilidad en cada una de las regiones y destinos turísticos que hoy acogen a visitantes de todo el mundo, donde la gastronomía y herencia cultural son motivo de alegría y admiración”, manifestó.
+
+    </string>
+
+    <string name="gaston_texto">
+        Gastón Acurio quería una vida sencilla: abrir un solo restaurante donde pudiese compartir su pasión por la cocina, con su familia y amigos. Jamás imaginó que se convertiría en el chef más conocido de la región, y en uno de los mejores embajadores de la gastronomía peruana
+        \n\n
+        Hoy, más de 25 años después, Acurio ha demostrado que la cocina es una industria creativa que no solo alimenta el cuerpo, sino también el alma y la cultura de América Latina y el Caribe.
+        \n\n
+        Recién graduado de Le Cordon Bleu, Gastón regresó a Perú junto a su esposa, Astrid Gutsche, para abrir un restaurante francés en Lima. Era una época donde la cocina peruana todavía se mantenía como uno de los secretos mejor guardados del país. Una tradición que se traspasaba de forma silenciosa, sin apreciar el valor que podía agregar a la economía o al desarrollo.
+        \n\n
+        Sin embargo, en el camino Gastón se dio cuenta que la receta del éxito no era emular tradiciones europeas, sino rescatar y dar a conocer las propias. “La cocina peruana es fruto de un mestizaje maravilloso y nos dimos cuenta que nos permitiría demostrar que somos capaces de abrir camino a una nueva imagen país, perder el miedo a reencontrarnos con nuestra identidad y crear valor a partir de ella”, dice.
+        \n\n
+        Gastón comenzó a estudiar sabores propios del Perú, que reflejaran la diversidad cultural, desde Los Andes hasta el Amazonas. Así, creó un menú 100% basado en la cocina tradicional del país y transformó su restaurante. Así nació Astrid y Gastón.
+        \n\n
+        La tarea no era fácil. No muchos creían en el proyecto, ya que localmente nadie tenía claro qué era un restaurante peruano. Menos qué platos ofrecería. Por eso es que quienes apostaron por este movimiento junto a Gastón enfrentaron múltiples barreras. “Nadie nos quería alquilar locales, porque tenían miedo y pensaban que íbamos a quebrar”, comenta.
+        \n\n
+        Sin embargo, fueron los mismos peruanos los que creyeron y apoyaron el proyecto. “El sentimiento de celebrar el amor por nuestra cocina, por nuestra cultura, por nuestra identidad, nos dio la fuerza necesaria y el empuje para superar esa primera etapa hostil y poder encontrar el escenario que hoy día conocemos”, dice Gastón.
+        \n\n
+        A nivel local, la cocina peruana permitió reactivar la industria agrícola y su relevancia en la construcción de una identidad país. “Necesitábamos que la gente entendiera que detrás de todos esos platos maravillosos hay personas produciendo estos ingredientes, que necesitan condiciones equitativas para mantenerse en el mercado”, explica.
+        \n\n
+        Gastón, junto a otros chefs apostaron por salir al mundo a hablar de las ventajas de crear platos con ingredientes estacionales y el valor de conocer el origen de cada producto. “Teníamos que promover la importancia de contar con la información correcta para decidir qué comer en función del impacto que esto tendrá en nuestra vida, en nuestra salud, en nuestro futuro e incluso en nuestra economía local”, comenta.
+    </string>
+
+    <string name="ceviche_texto">
+        Seviche, ceviche o cebiche, es quizá uno de los más reconocidos platos típicos que tiene en Perú; y aunque sus orígenes son aún desconocidos y disputados por otros, es una delicia culinaria que se ha preparado por muchos años, convirtiéndolo es un representante de la comida peruana.
+        \n\n
+        No se conoce con exactitud cuales fueron los inicios del cebiche, pero se sustentan varias teorías que hacen uso del nombre, lugar e inclusive ingredientes que fueron cambiando a medida que nuevas culturas se veían involucradas con la preparación de este tradicional plato.
+        \n\n
+        Se cree que hace más de 2000 años atrás en el litoral peruano, la cultura Mochica preparaba un plato a base de pescado fresco, que se cocinaba con zumo de una fruta local, llamado tumbo; luego en la época de la Incas, se maceraba el pescado con chica, y fue hasta la llegada de los españoles cuando se añadió los ingredientes que hoy conocemos en el ceviche: el limón y la cebolla.
+        \n\n
+        Según el historiador Javier Pulgar Vidal, la palabra “seviche” proviene de “siwichi” que es una terminología quechua que se traduce como pescado fresco o tierno. También se discuten otras versiones como “cebiche” proveniente de la palabra cebo, utilizado para referirse a un manjar o alimento.
+        \n\n
+        Pasando a otras lenguas, se sugiere que ceviche proviene de escabeche, que es una palabra de origen árabe; así mismo el historiador Juan José Vega describe “seviche” proveniente de “sibech” que es otra palabra árabe, y además su uso se encuentra dirigido hacia la comida ácida, con lo cual se relata una historia sobre la llegada de Pizarro y unas mujeres moriscas que agregaban naranjas agrias y después zumo de limón al pescado.
+        \n\n
+        A pesar de haber pasado mucho tiempo desde el conocimiento de estas formas de preparar el cebiche, siguen manteniéndose los mismos ingredientes, como lo son: pescado blanco en trozos, cebolla roja en juliana, jugo de limón, ají, culantro picado y sal.
+        \n\n
+        Los diferentes relatos que existen sobre el origen del ceviche, ponen en duda su procedencia, tan solo se sabe que es Perú y Ecuador los dos países que disputan esta denominación, quizá porque fueron los que estuvieron influenciados por los Incas; sin embargo, la primera receta de este plato de amerita a Manual Atanasio Fuentes en “La Guía de Lima”.
+        \n\n
+        En Perú este delicioso plato suele estar acompañado por camote y por maíz.
+    </string>
 
 </resources>

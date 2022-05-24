@@ -2,24 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/primerFragmento"
-        android:icon="@android:drawable/ic_dialog_info"
-        android:title="Informacion" />
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="Historia" />
 
     <item
         android:id="@+id/segundoFragmento"
-        android:icon="@mipmap/ic_home3_foreground"
-        android:title="Home"
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="Premios"
         />
 
     <item
         android:id="@+id/tercerFragmento"
-        android:icon="@android:drawable/ic_dialog_alert"
-        android:title="Acerca de"
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="Gaston"
         />
 
     <item
         android:id="@+id/cuartoFragmento"
-        android:icon="@android:drawable/ic_dialog_alert"
-        android:title="Lista"
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="Ceviche"
         />
 </menu>
