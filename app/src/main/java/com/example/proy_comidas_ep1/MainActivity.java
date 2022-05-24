@@ -45,9 +45,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.departamentos_selva:
                 mostrarDepartamentosSelva();
                 return true;
-            case R.id.recetas_adicionales:
-                mostrarRecetasAdicionales();
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -63,8 +60,5 @@ public class MainActivity extends AppCompatActivity {
 
     private void mostrarDepartamentosSelva() {
         startActivity(new Intent(this, DepartamentosSelvaActivity.class));
-    }
-    private void mostrarRecetasAdicionales() {
-        startActivity(new Intent(this, recetasAdicionales.class));
     }
 }
