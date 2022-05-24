@@ -12,9 +12,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 
-import com.google.android.material.bottomnavigation.BottomNavigationItemView;
+import com.example.proy_comidas_ep1.fragments.CuartoFragmento;
+import com.example.proy_comidas_ep1.fragments.PrimerFragmento;
+import com.example.proy_comidas_ep1.fragments.SegundoFragmento;
+import com.example.proy_comidas_ep1.fragments.TercerFragmento;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
