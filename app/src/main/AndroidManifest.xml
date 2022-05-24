@@ -180,6 +180,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".RestaurantesArequipa"
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"

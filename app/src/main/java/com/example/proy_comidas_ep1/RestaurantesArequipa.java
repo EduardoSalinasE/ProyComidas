@@ -1,6 +1,7 @@
 package com.example.proy_comidas_ep1;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -13,6 +14,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.proy_comidas_ep1.adapters.RestauranteAdapter;
 import com.example.proy_comidas_ep1.databinding.ActivityRestaurantesArequipaBinding;
 
 import org.json.JSONArray;
@@ -58,28 +60,25 @@ public class RestaurantesArequipa extends AppCompatActivity {
         try {
             JSONArray jsonArray = new JSONArray(response);
             for (int i=0; i< jsonArray.length(); i++){
+
                 String name = jsonArray.getJSONObject(i).getString("name");
                 String especialidad = jsonArray.getJSONObject(i).getString("especialidad");
                 String horario = jsonArray.getJSONObject(i).getString("horario");
+                String menu = jsonArray.getJSONObject(i).getString("menu");
+                String bar = jsonArray.getJSONObject(i).getString("bar");
                 HashMap<String, String> map = new HashMap<>();
                 map.put("name",name);
                 map.put("especialidad",especialidad);
                 map.put("horario",horario);
+                map.put("menu",menu);
+                map.put("bar",bar);
 
                 arrayList.add(map);
             }
 
-            String[] origen = {"name","especialidad","horario"};
-            int[] destino = {R.id.tvRestauranteName, R.id.tvRestauranteEspecialidad, R.id.tvRestauranteHorario};
-
-            ListAdapter listAdapter = new SimpleAdapter(
-                    this,
-                    arrayList,
-                    R.layout.item_restaurante,
-                    origen,
-                    destino
-            );
-            binding.rcRestaurante.setAdapter(listAdapter);
+            RestauranteAdapter restauranteAdapter = new RestauranteAdapter(arrayList);
+            binding.rvRestaurante.setAdapter(restauranteAdapter);
+            binding.rvRestaurante.setLayoutManager(new LinearLayoutManager(this));
 
 
         } catch (JSONException e) {

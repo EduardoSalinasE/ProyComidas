@@ -86,6 +86,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.departamentos_selva:
                 mostrarDepartamentosSelva();
                 return true;
+            case R.id.restaurantes_aqp:
+                mostrarRestaurantesAQP();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -101,6 +104,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void mostrarDepartamentosSelva() {
         startActivity(new Intent(this, DepartamentosSelvaActivity.class));
+    }
+
+    private void mostrarRestaurantesAQP() {
+        startActivity(new Intent(this, RestaurantesArequipa.class));
     }
 
     public void loadFragment(Fragment fragment){

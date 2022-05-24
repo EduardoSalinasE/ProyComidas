@@ -14,4 +14,7 @@
     <item
         android:id="@+id/recetas_adicionales"
         android:title="Recetas Adicionales" />
+    <item
+        android:id="@+id/restaurantes_aqp"
+        android:title="Restaurantes Arequipa (ReciclerView)" />
 </menu>
