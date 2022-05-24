@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 
+
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -14,6 +16,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.proy_comidas_ep1.fragments.PrimerFragmento;
+import com.example.proy_comidas_ep1.fragments.SegundoFragmento;
+import com.example.proy_comidas_ep1.fragments.TercerFragmento;
+import com.example.proy_comidas_ep1.fragments.CuartoFragmento;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -41,16 +47,16 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.firstFragment:
+                case R.id.primerFragmento:
                     loadFragment(primerFragmento);
                     return true;
-                case R.id.secondFragment:
+                case R.id.segundoFragmento:
                     loadFragment(segundoFragmento);
                     return true;
-                case R.id.thirdFragment:
+                case R.id.tercerFragmento:
                     loadFragment(tercerFragmento);
                     return true;
-                case R.id.fourthFragment:
+                case R.id.cuartoFragmento:
                     loadFragment(cuartoFragmento);
                     return true;
             }
