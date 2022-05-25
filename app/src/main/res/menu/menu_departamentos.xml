@@ -13,7 +13,7 @@
         android:title="Platos de la Sierra" />
     <item
         android:id="@+id/recetas_adicionales"
-        android:title="Recetas Adicionales" />
+        android:title="Recetas Adicionales (ListView)" />
     <item
         android:id="@+id/restaurantes_aqp"
         android:title="Restaurantes Arequipa (ReciclerView)" />
