@@ -89,6 +89,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.restaurantes_aqp:
                 mostrarRestaurantesAQP();
                 return true;
+            case R.id.recetas_adicionales:
+                mostrarRecetasAdicionales();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -114,5 +117,9 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame_container, fragment);
         transaction.commit();
+    }
+
+    private void mostrarRecetasAdicionales() {
+        startActivity(new Intent(this, recetasAdicionales.class));
     }
 }
