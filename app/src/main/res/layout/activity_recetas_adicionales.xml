@@ -6,16 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".recetasAdicionales">
 
-    <TableRow
-        android:layout_width="410dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="36dp"
-        android:orientation="vertical"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="411dp"
+        android:layout_height="54dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.947"/>
+        app:layout_constraintVertical_bias="1.0" />
 
+    <Button
+        android:id="@+id/btn_back_menu"
+        style="@style/boton_platos3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="24dp"
+        android:text="Regresar"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+        android:id="@+id/list_datos"
+        android:layout_width="409dp"
+        android:layout_height="474dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,12 +15,11 @@ public class recetasAdicionales extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recetas_adicionales);
 
-        Button btnBackToMain = findViewById(R.id.btnRegresarInicio);
-        btnBackToMain.setOnClickListener(this);
     }
 
+
     @Override
-    public void onClick(View view) {
+    public void onClick(View v) {
 
     }
 }
