@@ -17,4 +17,7 @@
     <item
         android:id="@+id/restaurantes_aqp"
         android:title="Restaurantes Arequipa (ReciclerView)" />
+    <item
+        android:id="@+id/gastos"
+        android:title="Gastos (ep3)" />
 </menu>

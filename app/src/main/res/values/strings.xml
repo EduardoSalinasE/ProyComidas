@@ -98,7 +98,9 @@ gastronomía peruana.
         En Perú este delicioso plato suele estar acompañado por camote y por maíz.
     </string>
     <string name="title_activity_caja">CajaActivity</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_registro">Registro</string>
+    <string name="tab_reporte">Reporte</string>
+    <string name="tab_gastos">Gastos</string>
+    <string name="tab_ingresos">Ingresos</string>
 
 </resources>

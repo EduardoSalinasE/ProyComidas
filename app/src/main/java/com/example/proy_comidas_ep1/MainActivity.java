@@ -92,6 +92,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.recetas_adicionales:
                 mostrarRecetasAdicionales();
                 return true;
+            case R.id.gastos:
+                mostrarGastos();
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -111,6 +115,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void mostrarRestaurantesAQP() {
         startActivity(new Intent(this, RestaurantesArequipa.class));
+    }
+
+    private void mostrarGastos() {
+        startActivity(new Intent(this, CajaActivity.class));
     }
 
     public void loadFragment(Fragment fragment){
