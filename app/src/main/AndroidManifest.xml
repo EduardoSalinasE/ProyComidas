@@ -12,126 +12,130 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proy_Comidas_ep1">
         <activity
+            android:name=".CajaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_caja"
+            android:theme="@style/Theme.Proy_Comidas_ep1.NoActionBar" />
+        <activity
             android:name=".UcayaliPlato3Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Ucayali"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".UcayaliPlato2Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Ucayali"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".UcayaliPlato1Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Ucayali"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".TumbesPlato3Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Tumbes"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".TumbesPlato2Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Tumbes"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".TumbesPlato1Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Tumbes"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".PunoPlato3Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Puno"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".PunoPlato2Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Puno"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".PunoPlato1Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Puno"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".PiuraPlato3Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Piura"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".PiuraPlato2Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Piura"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".PiuraPlato1Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Piura"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".LoretoPlato3Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Loreto"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".LoretoPlato2Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Loreto"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".LoretoPlato1Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Loreto"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".CuscoPlato3Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Cusco"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".CuscoPlato2Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Cusco"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".CuscoPlato1Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Cusco"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".ArequipaPlato3Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Arequipa"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".ArequipaPlato2Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Arequipa"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".ArequipaPlato1Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
-            android:label="Arequipa"
             android:exported="false"
-            />
+            android:label="Arequipa"
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".LimaPlato3Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Lima"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".LimaPlato2Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Lima"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".LimaPlato1Activity"
-            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar"
+            android:exported="false"
             android:label="Lima"
-            android:exported="false" />
+            android:theme="@style/Theme.Proy_Comidas_ep1.TransparentActionBar" />
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -183,7 +187,8 @@
         <activity
             android:name=".RestaurantesArequipa"
             android:exported="false" />
-        <activity android:name=".recetasAdicionales"
+        <activity
+            android:name=".recetasAdicionales"
             android:exported="false" />
 
         <meta-data
