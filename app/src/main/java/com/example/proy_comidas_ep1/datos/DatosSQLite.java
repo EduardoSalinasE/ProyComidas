@@ -2,6 +2,7 @@ package com.example.proy_comidas_ep1.datos;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -31,9 +32,16 @@ public class DatosSQLite extends SQLiteOpenHelper {
         contentValues.put("monto", monto);
         contentValues.put("movimiento", movimiento);
 
+
         int autonumerico = (int) sqLiteDatabase.insert("movimiento",null, contentValues);
         return autonumerico;
 
+    }
+
+    public Cursor movimientosSelect(DatosSQLite datosSQLite){
+        SQLiteDatabase sqLiteDatabase = datosSQLite.getReadableDatabase();
+        String sql = "SELECT * FROM movimientos";
+        return sqLiteDatabase.rawQuery(sql,null);
     }
 
     @Override
