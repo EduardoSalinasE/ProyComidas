@@ -33,7 +33,7 @@ public class DatosSQLite extends SQLiteOpenHelper {
         contentValues.put("movimiento", movimiento);
 
 
-        int autonumerico = (int) sqLiteDatabase.insert("movimiento",null, contentValues);
+        int autonumerico = (int) sqLiteDatabase.insert("movimientos",null, contentValues);
         return autonumerico;
 
     }
