@@ -21,12 +21,14 @@ import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 
 public class ReporteFragment extends Fragment {
 
     ArrayList arrayList = new ArrayList<HashMap<String, String>>();
     RecyclerView recyclerView;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,6 +46,8 @@ public class ReporteFragment extends Fragment {
         leerDatos();
     }
 
+
+
     private void leerDatos(){
         DatosSQLite datosSQLite = new DatosSQLite(getActivity());
         Cursor cursor = datosSQLite.movimientosSelect(datosSQLite);
@@ -59,13 +63,14 @@ public class ReporteFragment extends Fragment {
                     map.put("movimiento", cursor.getString(cursor.getColumnIndexOrThrow("movimiento")));
 
                     arrayList.add(map);
+
+                    MovimientosAdapter movimientosAdapter = new MovimientosAdapter(arrayList);
+                    recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+                    recyclerView.setAdapter(movimientosAdapter);
+
                 }while (cursor.moveToNext());
-
-                MovimientosAdapter movimientosAdapter = new MovimientosAdapter(arrayList);
-                recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-                recyclerView.setAdapter(movimientosAdapter);
-
             }
         }
     }
+
 }

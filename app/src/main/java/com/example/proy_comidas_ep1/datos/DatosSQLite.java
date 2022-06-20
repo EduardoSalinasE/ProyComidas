@@ -44,6 +44,18 @@ public class DatosSQLite extends SQLiteOpenHelper {
         return sqLiteDatabase.rawQuery(sql,null);
     }
 
+    public Cursor gastosSelect(DatosSQLite datosSQLite){
+        SQLiteDatabase sqLiteDatabase = datosSQLite.getReadableDatabase();
+        String sql = "SELECT * FROM movimientos WHERE movimiento = -1";
+        return sqLiteDatabase.rawQuery(sql, null);
+    }
+
+    public Cursor ingresosSelect(DatosSQLite datosSQLite){
+        SQLiteDatabase sqLiteDatabase = datosSQLite.getReadableDatabase();
+        String sql = "SELECT * FROM movimientos WHERE movimiento = 1";
+        return sqLiteDatabase.rawQuery(sql, null);
+    }
+
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 

@@ -10,9 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.Checkable;
 import android.widget.Toast;
 
 import com.example.proy_comidas_ep1.R;
+import com.example.proy_comidas_ep1.adapters.MovimientosAdapter;
 import com.example.proy_comidas_ep1.datos.DatosSQLite;
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -21,6 +24,8 @@ public class RegistroFragment extends Fragment implements View.OnClickListener {
 
     TextInputEditText mtetDescripcion, mtetMonto;
     Button mbtnRegistrar;
+    CheckBox mchcGasto, mchcIngreso;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,6 +38,8 @@ public class RegistroFragment extends Fragment implements View.OnClickListener {
         super.onViewCreated(view, savedInstanceState);
         mtetDescripcion = view.findViewById(R.id.tetDescripcion);
         mtetMonto = view.findViewById(R.id.tetMonto);
+        mchcGasto = view.findViewById(R.id.chcGasto);
+        mchcIngreso = view.findViewById(R.id.chcIngreso);
         mbtnRegistrar = view.findViewById(R.id.btnRegistrar);
         mbtnRegistrar.setOnClickListener(this);
     }
@@ -42,7 +49,17 @@ public class RegistroFragment extends Fragment implements View.OnClickListener {
         String descripcion = mtetDescripcion.getText().toString();
         float monto = Float.parseFloat(mtetMonto.getText().toString());
         DatosSQLite datosSQLite = new DatosSQLite(getActivity());
-        int autonumerico = datosSQLite.movimientosInsert(datosSQLite, descripcion, monto, -1);
-        Toast.makeText(getActivity(), "Se registro el movimiento" + autonumerico, Toast.LENGTH_SHORT).show();
+
+        if (mchcGasto.isChecked()==true){
+            int autonumerico = datosSQLite.movimientosInsert(datosSQLite, descripcion, monto, -1);
+            Toast.makeText(getActivity(), "Se registro el movimiento" + autonumerico, Toast.LENGTH_SHORT).show();
+        }
+        if (mchcIngreso.isChecked()==true){
+            int autonumerico = datosSQLite.movimientosInsert(datosSQLite, descripcion, monto, 1);
+            Toast.makeText(getActivity(), "Se registro el movimiento" + autonumerico, Toast.LENGTH_SHORT).show();
+        }
+
     }
+
+
 }

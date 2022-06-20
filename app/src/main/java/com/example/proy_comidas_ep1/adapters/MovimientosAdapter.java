@@ -12,6 +12,7 @@ import com.example.proy_comidas_ep1.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class MovimientosAdapter extends RecyclerView.Adapter<MovimientosAdapter.ViewHolder> {
 
@@ -35,6 +36,7 @@ public class MovimientosAdapter extends RecyclerView.Adapter<MovimientosAdapter.
         holder.mtvDescripcion.setText(map.get("descripcion"));
         holder.mtvMonto.setText(map.get("monto"));
 
+
     }
 
     @Override
@@ -43,13 +45,17 @@ public class MovimientosAdapter extends RecyclerView.Adapter<MovimientosAdapter.
     }
 
 
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView mtvFecha, mtvDescripcion, mtvMonto;
         public ViewHolder(View view) {
             super(view);
+
             mtvFecha = itemView.findViewById(R.id.tvFecha);
             mtvDescripcion = itemView.findViewById(R.id.tvDescripcion);
             mtvMonto = itemView.findViewById(R.id.tvMonto);
+
         }
     }
+
 }
