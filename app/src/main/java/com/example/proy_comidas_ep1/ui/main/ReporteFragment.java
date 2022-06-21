@@ -8,6 +8,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,6 +30,7 @@ public class ReporteFragment extends Fragment {
     ArrayList arrayList = new ArrayList<HashMap<String, String>>();
     RecyclerView recyclerView;
 
+    private SwipeRefreshLayout swip1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,13 +38,27 @@ public class ReporteFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_reporte, container, false);
         recyclerView = view.findViewById(R.id.rvReporte);
 
+
+
         return view;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        swip1 = view.findViewById(R.id.swip1);
+
         leerDatos();
+
+        swip1.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                swip1.setRefreshing(false);
+
+                leerDatos();
+            }
+        });
 
     }
 
