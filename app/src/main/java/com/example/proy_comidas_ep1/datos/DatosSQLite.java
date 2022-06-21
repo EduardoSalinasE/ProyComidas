@@ -68,6 +68,14 @@ public class DatosSQLite extends SQLiteOpenHelper {
         return  sqLiteDatabase.rawQuery(sql, null);
     }
 
+    public Cursor sumaTotal(DatosSQLite datosSQLite){
+        SQLiteDatabase sqLiteDatabase = datosSQLite.getReadableDatabase();
+        String sql = "SELECT monto, SUM(CASE WHEN movimiento = 1 THEN monto END) - SUM(CASE WHEN movimiento = -1 THEN monto END) FROM movimientos ";
+        return  sqLiteDatabase.rawQuery(sql, null);
+    }
+
+
+
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 

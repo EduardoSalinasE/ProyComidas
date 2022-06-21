@@ -53,10 +53,44 @@ public class RegistroFragment extends Fragment implements View.OnClickListener {
         mbtnRegistrar = view.findViewById(R.id.btnRegistrar);
         mbtnRegistrar.setOnClickListener(this);
 
-        leerTotalIngresos();
-        //leerTotalGastos();
-        //leerTotal();
+        llenarIngresos();
+        llenarGastos();
+        llenarTotal();
+
     }
+
+    private void llenarTotal() {
+        DatosSQLite datosSQLite = new DatosSQLite(getActivity());
+        Cursor cursor = datosSQLite.sumaTotal(datosSQLite);
+
+
+        if(cursor.moveToFirst()){
+            mtvSaldoTotal.setText(cursor.getString(1));
+        }
+
+    }
+
+
+    private void llenarGastos() {
+        DatosSQLite datosSQLite = new DatosSQLite(getActivity());
+        Cursor cursor = datosSQLite.sumaGastos(datosSQLite);
+
+        if (cursor.moveToFirst()){
+            mtvGastosTotal.setText(cursor.getString(0));
+        }
+
+    }
+
+    private void llenarIngresos() {
+        DatosSQLite datosSQLite = new DatosSQLite(getActivity());
+        Cursor cursor = datosSQLite.sumaIngresos(datosSQLite);
+
+        if(cursor.moveToFirst()){
+            mtvIngresosTotal.setText(cursor.getString(0));
+        }
+    }
+
+
 
     @Override
     public void onClick(View view) {
@@ -74,18 +108,6 @@ public class RegistroFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-    private void leerTotalIngresos(){
 
-        DatosSQLite datosSQLite = new DatosSQLite(getActivity());
-        Cursor cursor = datosSQLite.sumaIngresos(datosSQLite);
-
-        HashMap<String,String> map = new HashMap<>();
-        map.put("monto", cursor.getString(cursor.getColumnIndexOrThrow("monto")));
-
-        mtvIngresosTotal.setText(cursor.getString(0));
-
-
-
-    }
 
 }

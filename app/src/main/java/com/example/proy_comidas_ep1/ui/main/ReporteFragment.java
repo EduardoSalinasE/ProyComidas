@@ -42,8 +42,8 @@ public class ReporteFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         leerDatos();
+
     }
 
 
@@ -67,6 +67,8 @@ public class ReporteFragment extends Fragment {
                     MovimientosAdapter movimientosAdapter = new MovimientosAdapter(arrayList);
                     recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
                     recyclerView.setAdapter(movimientosAdapter);
+                    movimientosAdapter.notifyDataSetChanged();
+
 
                 }while (cursor.moveToNext());
             }
