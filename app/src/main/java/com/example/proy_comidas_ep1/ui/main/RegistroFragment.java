@@ -94,17 +94,24 @@ public class RegistroFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
+
+
         String descripcion = mtetDescripcion.getText().toString();
         float monto = Float.parseFloat(mtetMonto.getText().toString());
         DatosSQLite datosSQLite = new DatosSQLite(getActivity());
 
-        if (mchcGasto.isChecked()==true){
-            int autonumerico = datosSQLite.movimientosInsert(datosSQLite, descripcion, monto, -1);
-            Toast.makeText(getActivity(), "Se registro el movimiento" + autonumerico, Toast.LENGTH_SHORT).show();
-        }
-        if (mchcIngreso.isChecked()==true){
-            int autonumerico = datosSQLite.movimientosInsert(datosSQLite, descripcion, monto, 1);
-            Toast.makeText(getActivity(), "Se registro el movimiento" + autonumerico, Toast.LENGTH_SHORT).show();
+        if(!(mtetDescripcion.getText().toString()).isEmpty()&&!(mtetMonto.getText().toString().isEmpty())) {
+            if (mchcGasto.isChecked()==true){
+                int autonumerico = datosSQLite.movimientosInsert(datosSQLite, descripcion, monto, -1);
+                Toast.makeText(getActivity(), "Se registro el movimiento" + autonumerico, Toast.LENGTH_SHORT).show();
+            }
+            if (mchcIngreso.isChecked()==true){
+                int autonumerico = datosSQLite.movimientosInsert(datosSQLite, descripcion, monto, 1);
+                Toast.makeText(getActivity(), "Se registro el movimiento" + autonumerico, Toast.LENGTH_SHORT).show();
+            }
+
+            mtetDescripcion.setText("");
+            mtetMonto.setText("");
         }
     }
 
